@@ -1,0 +1,21 @@
+[package]
+name = "merkle-log-db"
+version = "0.1.0"
+edition = "2021"
+authors = ["OrderStream <healthdecoded77@gmail.com>"]
+description = "High-throughput, zero-dependency embedded append-only audit database in Rust with automated SHA-256 Merkle root computation on every write."
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/OrderStream/merkle-log-db"
+readme = "README.md"
+keywords = ["merkle", "audit", "database", "append-only", "cryptography"]
+
+[[bin]]
+name = "merkle-log-db"
+path = "src/main.rs"
+
+[lib]
+name = "merkle_log_db"
+path = "src/lib.rs"
+
+[dependencies]
+# Zero non-standard dependencies! Only standard Rust library for ultimate portability.
